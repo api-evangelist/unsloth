@@ -1,23 +1,125 @@
 aid: unsloth
 name: Unsloth
-description: Unsloth is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Unsloth is an open-source framework for fine-tuning, reinforcement learning,
+  and running large language models locally. Its Python library trains 500+
+  models (text, vision, audio, embeddings) roughly 2x faster with up to 70-80%
+  less VRAM via custom Triton kernels and dynamic quantization, and Unsloth
+  Studio provides a local, browser-based GUI for no-code training and chat.
+  Models loaded in Unsloth are exposed through an authenticated,
+  OpenAI-compatible local API endpoint (llama-server) so agents like Claude
+  Code, Codex, and standard OpenAI/Anthropic SDKs can use them; there is no
+  hosted SaaS API. Backed by Lightspeed Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/unsloth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - lightspeed-venture-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched-2026-07-21
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- LLM Fine-Tuning
+- Machine Learning
+- Open Source
+- Reinforcement Learning
+- Quantization
+- Local AI
+- Developer Tools
+image: https://unsloth.ai/cgi/image/unsloth_logo_no_shadow_KgfOV6keeBZnffQsKUny3.png
 apis: []
+common:
+- type: DomainSecurity
+  url: security/unsloth-domain-security.yml
+- name: Website
+  type: Website
+  url: https://unsloth.ai
+- name: Documentation
+  type: Documentation
+  url: https://unsloth.ai/docs
+- name: Getting Started
+  type: GettingStarted
+  url: https://unsloth.ai/docs/get-started/fine-tuning-for-beginners
+- name: Blog
+  type: Blog
+  url: https://unsloth.ai/blog
+- name: GitHub Organization
+  type: GitHubOrganization
+  url: https://github.com/unslothai
+- name: Support (Discord Community)
+  type: Support
+  url: https://discord.com/invite/unsloth
+- name: Contact
+  type: Contact
+  url: https://unsloth.ai/contact
+- name: Pricing
+  type: Pricing
+  url: https://unsloth.ai/pricing
+- name: Terms of Service
+  type: TermsOfService
+  url: https://unsloth.ai/terms
+- name: Privacy Policy
+  type: PrivacyPolicy
+  url: https://unsloth.ai/privacy
+- name: Newsletter
+  type: Newsletter
+  url: https://unslothai.substack.com/
+- name: Hugging Face Organization
+  type: ModelHub
+  url: https://huggingface.co/unsloth
+- name: Release Notes (GitHub Releases)
+  type: ChangeLog
+  url: https://github.com/unslothai/unsloth/releases
+- name: Changelog Artifact
+  type: ChangeLog
+  url: changelog/unsloth-changelog.yml
+- name: Packages
+  type: Packages
+  url: packages/unsloth-packages.yml
+- name: SDKs
+  type: SDKs
+  url: packages/unsloth-packages.yml
+- name: LLMs.txt
+  type: LLMsTxt
+  url: llms/unsloth-llms.txt
+- name: Well-Known Index
+  type: WellKnown
+  url: well-known/unsloth-well-known.yml
+- name: Conformance
+  type: Conformance
+  url: conformance/unsloth-conformance.yml
+- name: CLI
+  type: CLI
+  url: cli/unsloth-cli.yml
+- name: Authentication
+  type: Authentication
+  url: authentication/unsloth-authentication.yml
+- name: Lifecycle
+  type: Lifecycle
+  url: lifecycle/unsloth-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

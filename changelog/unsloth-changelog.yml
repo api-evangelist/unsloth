@@ -1,0 +1,49 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/unslothai/unsloth/releases
+docs: https://unsloth.ai/docs/new/changelog
+description: >-
+  Structured capture of Unsloth's release surface. The unslothai/unsloth
+  GitHub repository cuts frequent tagged beta releases (v0.1.x-beta) for the
+  app/Studio surface, while the PyPI library versions on a calver-like
+  YYYY.M.patch scheme (2026.7.4 current at capture). The docs site also
+  maintains an "Unsloth Updates" changelog page. Recent window only; the live
+  release feed is the source of truth.
+versioning:
+  library_scheme: calver YYYY.M.patch (PyPI unsloth)
+  library_current: '2026.7.4'
+  app_scheme: semver-tagged beta releases (v0.1.x-beta)
+  app_current: v0.1.50-beta
+entries:
+  - version: v0.1.50-beta
+    date: '2026-07-20'
+    highlights:
+      - Introducing AMD support
+    url: https://github.com/unslothai/unsloth/releases/tag/v0.1.50-beta
+  - version: v0.1.49-beta
+    date: '2026-07-15'
+    highlights:
+      - New personalization and language support
+    url: https://github.com/unslothai/unsloth/releases/tag/v0.1.49-beta
+  - version: v0.1.481-beta
+    date: '2026-07-09'
+    highlights:
+      - DeepSeek-V4 support
+      - NVFP4 exporting
+    url: https://github.com/unslothai/unsloth/releases/tag/v0.1.481-beta
+  - version: v0.1.48-beta
+    date: '2026-07-07'
+    url: https://github.com/unslothai/unsloth/releases/tag/v0.1.48-beta
+  - version: v0.1.471-beta
+    date: '2026-06-22'
+    highlights:
+      - GLM 5.2 support
+      - Model Hub
+      - 3x longer contexts
+    url: https://github.com/unslothai/unsloth/releases/tag/v0.1.471-beta
+  - version: v0.1.464-beta
+    date: '2026-06-13'
+    highlights:
+      - DiffusionGemma
+      - Gemma 4 MTP
+    url: https://github.com/unslothai/unsloth/releases/tag/v0.1.464-beta

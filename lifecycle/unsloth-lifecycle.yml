@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/unslothai/unsloth/releases
+description: >-
+  Lifecycle posture for Unsloth (2026-07-21). Unsloth is an open-source local
+  framework: releases are frequent tagged betas on GitHub plus calver PyPI
+  library releases; there is no hosted API, no public status page
+  (status.unsloth.ai returns 404), and no published deprecation policy or
+  Sunset/Deprecation header support. Absence is recorded as valid data.
+versioning:
+  library_scheme: calver YYYY.M.patch (PyPI unsloth, 2026.7.4 current)
+  app_scheme: tagged beta releases (v0.1.50-beta current)
+  docs: https://unsloth.ai/docs/get-started/install/updating
+  changelog: changelog/unsloth-changelog.yml
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No published deprecation policy found (docs + site searched 2026-07-21).
+sla:
+  url: null
+  note: No SLA — local software, no hosted service.
+status_page: null
+status_page_probe:
+  - {url: 'https://status.unsloth.ai', status: 404}
+deprecated_operations: []

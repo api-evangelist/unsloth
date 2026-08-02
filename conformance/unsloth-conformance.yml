@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: derived
+source: >-
+  Derived from Unsloth documentation (unsloth.ai/docs, llms.txt captured
+  2026-07-21) and live /.well-known/ probes. Unsloth is an open-source local
+  training/inference framework, not a hosted API provider, so most hosted-API
+  standards do not apply.
+standards:
+  - id: openai-compatible-api
+    conforms: true
+    evidence: >-
+      Unsloth exposes locally loaded models (including GGUFs) as an
+      OpenAI-compatible API endpoint via llama-server, usable from the official
+      OpenAI/Anthropic SDKs and agents like Claude Code and Codex
+      (unsloth.ai/docs/basics/api,
+      unsloth.ai/docs/basics/inference-and-deployment/llama-server-and-openai-endpoint,
+      unsloth.ai/docs/integrations/connect-python-sdk-to-unsloth).
+  - id: oauth2
+    conforms: false
+    evidence: >-
+      No OAuth 2.0 surface; the local API is protected by a generated API key
+      (llama-server long API key), and no /.well-known/oauth-authorization-server
+      exists on unsloth.ai (probed 404, 2026-07-21).
+  - id: oidc
+    conforms: false
+    evidence: No /.well-known/openid-configuration on unsloth.ai (probed 404, 2026-07-21).
+  - id: mcp
+    conforms: partial
+    evidence: >-
+      Unsloth does not publish a first-party MCP server, but documents
+      connecting MCP servers to locally-run models
+      (unsloth.ai/docs/basics/mcp); community MCP servers exist (e.g.
+      OtotaO/unsloth-mcp-server) and are not first-party.
+  - id: llms-txt
+    conforms: true
+    evidence: >-
+      https://unsloth.ai/docs/llms.txt returns 200 (GitBook-published, with
+      agent query instructions); captured verbatim in llms/unsloth-llms.txt.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: /.well-known/security.txt returns 404 on unsloth.ai (probed 2026-07-21).
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No hosted API error surface; not applicable to the local framework.

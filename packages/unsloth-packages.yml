@@ -1,0 +1,47 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/pypi/unsloth/json
+description: >-
+  First-party Unsloth packages verified against the public registries (PyPI
+  JSON API and Docker Hub v2 API) on 2026-07-21. Unsloth is an open-source
+  fine-tuning/RL framework distributed as Python packages and an official
+  Docker image; there is no hosted SaaS API client SDK. The PyPI package
+  "unsloth-cli" (AgentCulture) is third-party and intentionally excluded.
+packages:
+  - language: python
+    registry: pypi
+    name: unsloth
+    version: '2026.7.4'
+    url: https://pypi.org/project/unsloth/
+    source: https://github.com/unslothai/unsloth
+    install: pip install unsloth
+    license: Apache-2.0
+    official: true
+    note: Core library — 2-5X faster training, reinforcement learning & finetuning.
+  - language: python
+    registry: pypi
+    name: unsloth-zoo
+    version: '2026.7.4'
+    url: https://pypi.org/project/unsloth-zoo/
+    source: https://github.com/unslothai/unsloth
+    install: pip install unsloth-zoo
+    license: LGPL-3.0-or-later
+    official: true
+    note: Utilities for Unsloth (dependency of the core package).
+  - language: python
+    registry: pypi
+    name: unsloth-studio
+    version: '2025.3.1'
+    url: https://pypi.org/project/unsloth-studio/
+    source: https://github.com/unslothai/unsloth
+    install: pip install unsloth-studio
+    official: true
+    note: Unsloth Studio package published by the Unsloth AI team (info@unsloth.ai).
+  - language: docker
+    registry: dockerhub
+    name: unsloth/unsloth
+    url: https://hub.docker.com/r/unsloth/unsloth
+    source: https://unsloth.ai/docs/get-started/install/docker
+    install: docker pull unsloth/unsloth
+    official: true
+    note: Official Unsloth Docker image (200k+ pulls at capture time).

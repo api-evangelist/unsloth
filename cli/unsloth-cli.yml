@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+source: https://unsloth.ai/docs/basics/api
+description: >-
+  The first-party Unsloth command-line surface, captured from the Unsloth docs
+  (2026-07-21). The `unsloth` CLI ships with Unsloth Studio and serves local
+  models over the OpenAI/Anthropic-compatible API, launches coding agents
+  against them, and a training CLI (unsloth-cli.py) drives fine-tuning,
+  including multi-GPU DDP via torchrun. Binaries/packages are catalogued in
+  packages/unsloth-packages.yml.
+docs: https://unsloth.ai/docs/basics/api
+repo: https://github.com/unslothai/unsloth
+install:
+  pip: pip install unsloth  # CLI ships with Unsloth Studio; see docs/new/studio/install
+commands:
+  serve_api:
+    - name: unsloth run
+      description: >-
+        Load a GGUF model and start the local server on the default port
+        (e.g. `unsloth run --model unsloth/gemma-4-26B-A4B-it-GGUF:UD-Q4_K_XL`);
+        prints the endpoint URL and an auto-created sk-unsloth- API key.
+  coding_agents:
+    - name: unsloth start claude
+      description: Launch Claude Code against a locally loaded model (session-scoped provider config).
+    - name: unsloth start codex
+      description: Launch OpenAI Codex against a local model (requires a GGUF served via llama-server).
+    - name: unsloth start hermes
+      description: Launch Hermes Agent against a local model.
+    - name: unsloth start openclaw
+      description: Launch OpenClaw against a local model.
+    - name: unsloth start opencode
+      description: Launch OpenCode against a local model.
+    - name: unsloth start pi
+      description: Launch Pi Coding Agent against a local model.
+    - name: unsloth start <agent> --model <repo:quant> --context-length <n>
+      description: Select and load a model (with quant suffix) while launching the agent.
+  training:
+    - name: python unsloth-cli.py
+      description: >-
+        Training CLI — flags include --model_name, --max_seq_length, --dtype,
+        --load_in_4bit, --dataset, --r, --lora_alpha, --lora_dropout, --bias,
+        --use_gradient_checkpointing, --save_model.
+    - name: torchrun --nproc_per_node=<gpus> unsloth-cli.py
+      description: Multi-GPU Distributed Data Parallel (DDP) fine-tuning via the torchrun launcher.
+key_flows:
+  - Serve a local GGUF model as an authenticated OpenAI/Anthropic-compatible API (unsloth run).
+  - Run coding agents fully offline against local models (unsloth start <agent>).
+  - Single-node and multi-node fine-tuning from the command line (unsloth-cli.py + torchrun).
