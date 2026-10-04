@@ -48,8 +48,8 @@ tags:
 - Company
 - Artificial Intelligence
 - LLM Fine-Tuning
-- Machine-Learning
-- Open-Source
+- Machine Learning
+- Open Source
 - Reinforcement Learning
 - Quantization
 - Local AI
@@ -64,6 +64,8 @@ tags_raw:
 - Quantization
 - Local AI
 - Developer Tools
+- Machine-Learning
+- Open-Source
 image: https://unsloth.ai/cgi/image/unsloth_logo_no_shadow_KgfOV6keeBZnffQsKUny3.png
 apis: []
 common:
