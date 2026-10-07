@@ -69,6 +69,8 @@ tags_raw:
 image: https://unsloth.ai/cgi/image/unsloth_logo_no_shadow_KgfOV6keeBZnffQsKUny3.png
 apis: []
 common:
+- type: Plans
+  url: plans/unsloth-plans-pricing.yml
 - type: DomainSecurity
   url: security/unsloth-domain-security.yml
 - name: Website
