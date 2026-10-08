@@ -1,0 +1,37 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://unsloth.ai/pricing
+sources:
+- https://unsloth.ai/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: negotiated
+delivery:
+  delivery: open-core
+  method: page
+  read: '2026-10-07'
+  evidence: Freeware of our standard version of unsloth
+  free_edition: Free
+published: false
+note: No numeric prices; free open-source tier plus two 'Contact us' paid tiers.
+plan_count: 3
+plans:
+- name: Free
+  price_text: Get started
+  period: none
+  included_quota: Open-source; Supports Mistral, Gemma; Supports LLama 1, 2, 3; MultiGPU - coming soon;
+    Supports 4 bit, 16 bit LoRA
+- name: unsloth Pro
+  price_text: Contact us
+  period: none
+  included_quota: 2.5x number of GPUs faster than FA2; 20% less memory than OSS; Enhanced MultiGPU support;
+    Up to 8 GPUS support
+- name: unsloth Enterprise
+  price_text: Contact us
+  period: none
+  included_quota: 32x number of GPUs faster than FA2; up to +30% accuracy; 5x faster inference; Supports
+    full training; All Pro plan features; Multi-node support; Customer support
