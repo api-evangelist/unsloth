@@ -110,6 +110,41 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-agent-skills.py
   first_seen: '2026-10-20'
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/unsloth
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - unsloth/OpenMathReasoning-mini
+  - unsloth/alpaca-cleaned
+  - unsloth/LaTeX_OCR
+  - unsloth/Radiology_mini
+  - unsloth/llava-instruct-mix-vsft-mini
+  - unsloth/notebooks
+  - unsloth/jobs
+  - unsloth/OpenMathReasoning
+  - unsloth/Qwen3.8-27B-GGUF
+  - unsloth/MiniMax-H3-GGUF
+  - unsloth/Qwen-Image-2.1-GGUF
+  - unsloth/gemma-4-12b-it-GGUF
+  - unsloth/Qwen3.8-27B-NVFP4
+  - unsloth/Qwen3.5-9B-GGUF
+  - unsloth/Qwen3.6-35B-A3B-GGUF
+  - unsloth/Qwen3.5-4B-GGUF
+  - unsloth
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 generated: '2026-10-15'
 method: searched
 source:
@@ -132,3 +167,4 @@ checked:
 - https://officialskills.sh/sitemap.xml
 - https://skillsmp.com/sitemap.xml
 - https://www.skills.sh/sitemap.xml
+- hugging-face/integrations/hugging-face-integration-edges.yml
